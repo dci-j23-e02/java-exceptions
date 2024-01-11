@@ -34,7 +34,7 @@ public void withdraw(double amount) throws InsufficientFundsException {
     }else {
       // Not enough balance to withdraw the requested amount
       // IllegalArgumentException: the root cause of the InsufficientFundsException
-      throw new InsufficientFundsException(amount, new IllegalArgumentException());
+      throw new InsufficientFundsException(amount, new Throwable("The amount is too much ..."));
     }
 }
 
