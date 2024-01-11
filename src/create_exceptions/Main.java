@@ -5,6 +5,12 @@ public class Main {
   public static void main(String[] args) {
     BankAccount safwan = new BankAccount(100);
 
+    Person a = new Person(15);
+
+    a.setAge(150);
+
+
+/*
     try {
       safwan.withdraw(200);
     } catch (InsufficientFundsException e) {
@@ -12,6 +18,6 @@ public class Main {
       System.out.println("Do you want to withdraw less amount , or add more to your balance ");
 
       e.printStackTrace();
-    }
+    }*/
   }
 }
